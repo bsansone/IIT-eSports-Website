@@ -188,15 +188,13 @@ aside {
 }
 
 header {
-    /*    min-height: auto;
+    min-height: auto;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url(../img/2616014_orig.jpg);
-*/
-    background-color: rgb(30, 31, 26);
+    background-image: url(../img/group-scarlet-league.jpg);
     color: #fff
 }
 
