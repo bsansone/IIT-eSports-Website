@@ -97,7 +97,7 @@
                     <div class="service-box">
                         <img src="./img/league-icon.png">
                         <h3>League of Legends</h3>
-                        <a href="scarletleague/index.html">Learn more!</a>
+                        <a href="scarletleague/">Learn more!</a>
                         <!-- <p class="text-muted"></p>
  -->
                     </div>
@@ -106,7 +106,7 @@
                     <div class="service-box">
                         <img src="./img/smash-icon.png">
                         <h3>Super Smash</h3>
-                        <a href="smash/index.html">Learn more!</a>
+                        <a href="smash/">Learn more!</a>
                         <!-- <p class="text-muted"></p>
  -->
                     </div>
@@ -198,7 +198,24 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
     <!-- Plugin JavaScript -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+ -->
+    <script>
+    $(function() {
+        $('a[href*="#"]:not([href="#"])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html, body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
     <!-- Theme JavaScript -->
