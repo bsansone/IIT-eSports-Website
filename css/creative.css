@@ -170,50 +170,19 @@ aside {
     }
 }
 
-
-   header {
-   /*  background: url('https://www.mojopay.com/wp-content/uploads/2017/01/color.jpg') no-repeat center center;*/
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-   display: table;
-   width: 100%;
-   /*  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://www.mojopay.com/wp-content/uploads/2017/01/color.jpg', sizingMethod='scale')";
-   filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://www.mojopay.com/wp-content/uploads/2017/01/color.jpg', sizingMethod='scale')";*/ 
-   }
-   header .container {
-   display: table-cell;
-   text-align: center;
-   vertical-align: middle;
-   /*  height: 689px;*/
-   }
-   header:before {
-   content: "";
-   position: absolute;
-   top: 0; 
-   left: 0;
-   width: 100%; 
-   height: 100%;
-   opacity: .65; 
-   z-index: -1;
-   background: url('../img/header.jpg') no-repeat center center;
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-   background-size: cover;
-   display: table;
-   width: 100%;
-   text-align: center;
-   vertical-align: middle;
-   height: 689px;
-   -webkit-filter: brightness(50%) sepia(60%) blur(1px); /* Chrome, Opera, etc. */
-   filter: brightness(50%) sepia(60%) blur(1px); /* Firefox 35+, eventually all */
-   }
-
-
-
-
+header {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-image: url('../img/header.jpg');
+    text-align: center;
+    color: white;
+}
 
 header .header-content {
     position: relative;
